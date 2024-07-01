@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 5px #ff00ff, 0 0 15px #ff00ff, 0 0 5px #ff00ff,
+    0 0 15px #ff00ff, 0 0 30px #ff00ff, 0 0 30px #ff00ff;
+}
+
+.eye-closed {
+  stroke: #ff00ff;
+}
+
+.eye-open {
+  stroke: #00ffff;
+}
